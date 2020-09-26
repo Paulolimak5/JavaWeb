@@ -42,51 +42,10 @@
         </header>
 
         <!-- Classe de Anuncio Estufa -->
-        <div class="container" id="produtos">
+        <div class="container">
             <h3 class="h3">Estufas</h3>
-            <div class="row">
+            <div class="row" id="produtos">
 
-                <!-- Anuncio Estufa 01 -->
-                <div class="col-md-3 col-sm-6">
-                    <div class="product-grid">
-                        <div class="product-image">
-                            <a href="detalhe.html">
-                                <img class="pic-1" src="assets/img/products/p1-01.jpg">
-                                <img class="pic-2" src="assets/img/products/p1-02.jpg">
-                            </a>
-                            <ul class="social">
-                                <li><a href="detalhe.html" data-tip="Ver mais"><i class="fa fa-search"></i></a></li>
-                                <li><a href="carrinho.html" data-tip="Adicionar ao carrinho"><i class="fa fa-shopping-cart"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="product-content">
-                            <h3 class="title"><a href="detalhe.html">Estufa X1</a></h3>
-                            <div class="price">R$400,00</div>
-                            <a class="add-to-cart" href="carrinho.html">+ Adicionar ao carrinho</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Anuncio Estufa 02 -->
-                <div class="col-md-3 col-sm-6">
-                    <div class="product-grid">
-                        <div class="product-image">
-                            <a href="detalhe.html">
-                                <img class="pic-1" src="assets/img/products/p2-01.png">
-                                <img class="pic-2" src="assets/img/products/p2-02.png">
-                            </a>
-                            <ul class="social">
-                                <li><a href="detalhe.html" data-tip="Ver mais"><i class="fa fa-search"></i></a></li>
-                                <li><a href="carrinho.html" data-tip="Adicionar ao carrinho"><i class="fa fa-shopping-cart"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="product-content">
-                            <h3 class="title"><a href="detalhe.html">Estufa X1G</a></h3>
-                            <div class="price">R$600,00</div>
-                            <a class="add-to-cart" href="carrinho.html">+ Adicionar ao carrinho</a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -199,5 +158,11 @@
         <script src="assets/mail/jqBootstrapValidation.js"></script>
         <script src="assets/mail/contact_me.js"></script>
         <script src="js/scripts.js"></script>
+        <script src="js/Product.js"></script>
+        <script>
+            
+            var element = document.getElementById("#produtos");
+            getAllProducts();
+        </script>
     </body>
 </html>
