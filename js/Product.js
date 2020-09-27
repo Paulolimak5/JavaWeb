@@ -17,9 +17,11 @@ function getAllProducts(){
 
     });
 }
+var ctx = "${pageContext.request.contextPath}"
 
 
 function createDom(item){
+    let fotos = item.photo.split(",");
     let divpai = document.createElement("div");
     divpai.className = "col-md-3 col-sm-6";
 
@@ -30,11 +32,12 @@ function createDom(item){
     divImage.className = "product-image";
 
     let image1 = document.createElement("img");
-    image1.setAttribute("src",`${item.photo}`);
+    image1.setAttribute("src",`${fotos[0]}`);
     image1.className = "pic-1";
+    
 
     let image2 = document.createElement("img");
-    image2.setAttribute("src",`${item.photo}`);
+    image2.setAttribute("src",`${fotos.length >= 2 ? fotos[1] : fotos[0]}`);
     image2.className = "pic-2";
     
     let link = document.createElement("a");
