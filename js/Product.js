@@ -67,7 +67,7 @@ function createDom(item){
     let divPrice = document.createElement("div");
     divPrice.className = "price";
 
-    let preco = document.createTextNode(`${item.value}`);
+    let preco = document.createTextNode(`${item.saleValue}`);
 
     let linkCarrinho = document.createElement("a")
     linkCarrinho.setAttribute('href',"carrinho.html");
@@ -88,9 +88,10 @@ function createDom(item){
     linkName.appendChild(name);
     title.appendChild(linkName);
     divPrice.appendChild(preco);
+    linkCarrinho.appendChild(adicionarCarrinho);
     divProductContent.appendChild(title);
     divProductContent.appendChild(divPrice);
-    divProductContent.appendChild(adicionarCarrinho);
+    divProductContent.appendChild(linkCarrinho);
 
     divGrid.appendChild(divProductContent);
 
