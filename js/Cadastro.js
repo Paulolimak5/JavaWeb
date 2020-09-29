@@ -2,11 +2,10 @@ baseUrl = "http://localhost:8080/cadastro";
 
 
 
+    const form = document.getElementById('cadastro_form');
+    form.addEventListener('submit', e => {
 
-
-
-    function cadastroUsuario(){
-        let name = document.getElementById('name').value;
+      let name = $('#name').val();
         let cpf = document.getElementById('cpf').value;
         let email = document.getElementById('email').value;
         let username = document.getElementById('username').value;
@@ -17,9 +16,63 @@ baseUrl = "http://localhost:8080/cadastro";
         let neighborhood = document.getElementById('neighborhood').value;
         let number = document.getElementById('number').value;
         let reference = document.getElementById('reference').value;
-        let state = document.getElementById('state').value;
+        let state = $('#state').val();
         let telephone = document.getElementById('telephone').value;
         
+
+        let data ={
+            "address": {
+              "address": address,
+              "cep": cep,
+              "complement": complement,
+              "county": county,
+              "mainAddress": true,
+              "neighborhood": neighborhood,
+              "number": number,
+              "reference": reference,
+              "state": state,
+              "telephone": telephone
+            },
+            "user": {
+              "cpf": cpf,
+              "email": email,
+              "name": name,
+              "pass": null,
+              "photo": "string",
+              "username": username
+            }
+        };
+        console.log(name);
+        console.log(data);
+        $.ajax({
+            type: 'POST',
+            contentType: "application/json",
+            url: 'http://localhost:8080/user/register',
+            data: JSON.stringify(data),
+            success: function(data) { alert('data: ' + data); },
+            contentType: "application/json",
+            dataType: 'json'
+        });
+    })
+
+
+    /*function cadastroUsuario(e){
+      
+        let name = $('#name').val();
+        let cpf = document.getElementById('cpf').value;
+        let email = document.getElementById('email').value;
+        let username = document.getElementById('username').value;
+        let address = document.getElementById('address').value;
+        let cep = document.getElementById('cep').value;
+        let complement = document.getElementById('complement').value;
+        let county = document.getElementById('county').value;
+        let neighborhood = document.getElementById('neighborhood').value;
+        let number = document.getElementById('number').value;
+        let reference = document.getElementById('reference').value;
+        let state = $('#state').val();
+        let telephone = document.getElementById('telephone').value;
+        
+
         let data ={
             "addres": {
               "address": address,
@@ -42,17 +95,20 @@ baseUrl = "http://localhost:8080/cadastro";
               "username": "string"
             }
         };
-
+        console.log(name);
         console.log(data);
         $.ajax({
             type: 'POST',
+            contentType: "application/json",
             url: 'http://localhost:8080/user/register',
-            data: data,
+            data: JSON.stringify(data),
             success: function(data) { alert('data: ' + data); },
             contentType: "application/json",
             dataType: 'json'
         });
     }
 
-    $('submit_form').submit(cadastroUsuario());
 
+*/
+
+  

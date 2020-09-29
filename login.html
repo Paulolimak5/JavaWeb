@@ -36,16 +36,16 @@
         <!-- Formulário de Login -->
         <header class="masthead">
             <div class="login">
-                <form>
+                <form id="login_form">
                     <div class="form-login-email">
-                      <label for="exampleInputEmail1">Email</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail">
+                      <label for="exampleInputEmail1">Nome de usuário</label>
+                      <input type="text" class="form-control" id="username" aria-describedby="emailHelp" placeholder="E-mail">
                     </div>
                     <div class="form-login-senha">
                       <label for="exampleInputPassword1">Senha</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                      <input type="password" class="form-control" id="pass" placeholder="Senha">
                     </div>
-                    <button type="submit" class="btn btn-primary">Entrar</button>
+                    <button class="btn btn-primary">Entrar</button>
                     <a class="btn btn-danger" href="logado.html" role="button">Entrar 2</a>
                     <a href="#">Esqueceu a senha?</a>
                   </form>
@@ -109,5 +109,6 @@
         <script src="assets/mail/jqBootstrapValidation.js"></script>
         <script src="assets/mail/contact_me.js"></script>
         <script src="js/scripts.js"></script>
+        <script src="js/login.js"></script>
     </body>
 </html>
