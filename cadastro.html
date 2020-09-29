@@ -40,30 +40,46 @@
                 <form>
                     <div class="form-cadastro">
                         <label for="cadastroNome">Nome</label>
-                        <input type="text" class="form-control" id="cadastro" placeholder="Nome">
+                        <input id="name" type="text" class="form-control" placeholder="Nome">
 
                         <label for="cadastroCPF">CPF</label>
-                        <input type="text" class="form-control" id="cadastro" placeholder="CPF">
-
-                        <label for="cadastroEndereço">Endereço</label>
-                        <input type="text" class="form-control" id="cadastro" placeholder="Endereço">
-
-                        <label for="cadastroCEP">CEP</label>
-                        <input type="text" class="form-control" id="cadastro" placeholder="CEP">
-
-                        <label for="cadastroCidade">Cidade</label>
-                        <input type="text" class="form-control" id="cadastro" placeholder="Cidade">
-
-                        <label for="cadastroCelular">Celular</label>
-                        <input type="text" class="form-control" id="cadastro" placeholder="Celular">
+                        <input id="cpf" type="text" class="form-control" placeholder="CPF">
 
                         <label for="cadastroEmail">Email</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail">
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="E-mail">
 
-                        <label for="cadastroSenha">Senha</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                        <label for="userName">Nome de Usuário</label>
+                        <input id="username" type="text" class="form-control" placeholder="Nome de usuário">
+
+                        <label for="cadastroEndereço">Endereço</label>
+                        <input id="address" type="text" class="form-control" placeholder="Endereço">
+
+                        <label for="cadastroCEP">CEP</label>
+                        <input id="cep" type="text" class="form-control" placeholder="CEP">
+
+                        <label for="complemento">Complemento</label>
+                        <input id="complement" type="text" class="form-control" placeholder="Complemento">
+
+                        <label for="cadastroCidade">Cidade</label>
+                        <input id="county" type="text" class="form-control" placeholder="Cidade">
+
+                        <label for="bairro">Bairro</label>
+                        <input id="neighborhood" type="text" class="form-control" placeholder="Bairro">
+
+                        <label for="numero">Número</label>
+                        <input id="number" type="text" class="form-control" placeholder="Número">
+
+                        <label for="referencia">Referência</label>
+                        <input id="reference" type="text" class="form-control" placeholder="Referência">
+
+                        <label for="estado">Sigla estado</label>
+                        <input id="state" type="text" class="form-control" placeholder="Sigla estado">
+
+                        <label for="cadastroCelular">Celular</label>
+                        <input id="telephone" type="text" class="form-control" placeholder="Celular">
+
                     </div>
-                    <button type="submit" class="btn btn-primary">Criar conta!</button>
+                    <button type="submit" id="submit_form" class="btn btn-primary">Criar conta!</button>
                   </form>
             </div>
         </header>
@@ -125,5 +141,6 @@
         <script src="assets/mail/jqBootstrapValidation.js"></script>
         <script src="assets/mail/contact_me.js"></script>
         <script src="js/scripts.js"></script>
+        <script src="js/Cadastro.js"></script>
     </body>
 </html>
