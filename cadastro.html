@@ -37,7 +37,7 @@
         <header class="masthead">
             <div class="cadastro">
                 <h2>Cadastro</h2>
-                <form>
+                <form id="cadastro_form">
                     <div class="form-cadastro">
                         <label for="cadastroNome">Nome</label>
                         <input id="name" type="text" class="form-control" placeholder="Nome">
@@ -71,9 +71,39 @@
 
                         <label for="referencia">Referência</label>
                         <input id="reference" type="text" class="form-control" placeholder="Referência">
-
+                    
                         <label for="estado">Sigla estado</label>
-                        <input id="state" type="text" class="form-control" placeholder="Sigla estado">
+                        <select id="state" name="estado" class="form-control">
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="EX">Estrangeiro</option>
+                        </select>
+                        <!--<input id="state" type="text" class="form-control" placeholder="Sigla estado">-->
 
                         <label for="cadastroCelular">Celular</label>
                         <input id="telephone" type="text" class="form-control" placeholder="Celular">
