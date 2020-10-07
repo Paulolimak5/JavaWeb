@@ -18,7 +18,11 @@ const form = document.getElementById('login_form');
             contentType: "application/json",
             url: 'http://localhost:8080/user/authenticate',
             data: JSON.stringify(data),
-            success: function(data) { localStorage.setItem('token', data.token) },
+            success: function(data) { 
+                localStorage.setItem('token', data.token);
+                window.location.href = "logado.html";
+            },
+                 
             error: function( req, status, err ) {
                 console.log( 'something went wrong', status, err )
             },
