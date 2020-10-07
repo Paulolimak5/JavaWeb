@@ -54,11 +54,5 @@ baseUrl = "http://localhost:8080/cadastro";
             error: function (request, status, error) {
                 console.log(responseText)
             }
-            
-
-        });
-  
-        
-          
-        
-    })
+        });   
+})

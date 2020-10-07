@@ -45,67 +45,81 @@
                 <div class="panel-body">
                     <div class="row">
                     <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="assets/img/avatar.png" class="img-circle img-responsive"> </div>
-                    <div class=" col-md-9 col-lg-9 "> 
-                        <table class="table table-user-information">
-                        <tbody>
-                            <tr>
-                                <td>Nome:</td>
-                                <td id="nome_dados">José Aparecido da Silva</td>
-                            </tr>
-                            <tr>
-                                <td>CPF</td>
-                                <td id="cpf_dados">000.000.000-00</td>
-                            </tr>
-                            <tr>
-                                <td>Email</td>
-                                <td id="email_dados">josedasilvareidelas@gmail.com</td>
-                            </tr>
-                            <tr>
-                                <td>Nome de usuário</td>
-                                <td id="username_dados">josedasilvareidelas@gmail.com</td>
-                            </tr>
-                            <tr>
-                                <td>Endereço:</td>
-                                <td id="address_dados">Rua dos bananais, 459</td>
-                            </tr>
-                            <tr>
-                                <td>CEP:</td>
-                                <td id="cep_dados">00000-000</td>
-                            </tr>
-                            <tr>
-                                <td>Complemento:</td>
-                                <td id="complement_dados">São Paulo</td>
-                            </tr>
-                            <tr>
-                                <td>Cidade:</td>
-                                <td id="county_dados">São Paulo</td>
-                            </tr>
-                            <tr>
-                                <td>Bairro:</td>
-                                <td id="neighborhood_dados">São Paulo</td>
-                            </tr>
-                            <tr>
-                                <td>Número:</td>
-                                <td id="number_dados">São Paulo</td>
-                            </tr>
-                            <tr>
-                                <td>Referência:</td>
-                                <td id="referenc_dados">São Paulo</td>
-                            </tr>
-                            <tr>
-                                <td>Estado:</td>
-                                <td id="state_dados">São Paulo</td>
-                            </tr>
-                            <tr>
-                                <td>Celular:</td>
-                                <td id="telephone_dados">(00) 00000-0000</td>
-                            </tr>
-
-                        </tbody>
-                        </table>
-                        <a href="index.html" class="btn btn-info">Logout</a>
-                        <a href="editarmeusdados.html" class="btn btn-primary">Editar meus dados</a>
-                        <a href="#" class="btn btn-danger">Desativar conta</a>
+                    <div class=" col-md-9 col-lg-12 "> 
+                            <form id="editacadastro_form">
+                                <div class="form-cadastro">
+                                    <label for="cadastroNome">Nome</label>
+                                    <input id="nome_dados" type="text" class="form-control" placeholder="Nome">
+            
+                                    <label for="cadastroCPF">CPF</label>
+                                    <input id="cpf_dados" type="text" class="form-control" placeholder="CPF">
+            
+                                    <label for="cadastroEmail">Email</label>
+                                    <input type="email_dados" class="form-control" id="email" aria-describedby="emailHelp" placeholder="E-mail">
+            
+                                    <label for="userName">Nome de Usuário</label>
+                                    <input id="username_dados" type="text" class="form-control" placeholder="Nome de usuário">
+            
+                                    <label for="cadastroEndereço">Endereço</label>
+                                    <input id="address_dados" type="text" class="form-control" placeholder="Endereço">
+            
+                                    <label for="cadastroCEP">CEP</label>
+                                    <input id="cep_dados" type="text" class="form-control" placeholder="CEP">
+            
+                                    <label for="complemento">Complemento</label>
+                                    <input id="complement_dados" type="text" class="form-control" placeholder="Complemento">
+            
+                                    <label for="cadastroCidade">Cidade</label>
+                                    <input id="county_dados" type="text" class="form-control" placeholder="Cidade">
+            
+                                    <label for="bairro">Bairro</label>
+                                    <input id="neighborhood_dados" type="text" class="form-control" placeholder="Bairro">
+            
+                                    <label for="numero">Número</label>
+                                    <input id="number_dados" type="text" class="form-control" placeholder="Número">
+            
+                                    <label for="referencia">Referência</label>
+                                    <input id="reference_dados" type="text" class="form-control" placeholder="Referência">
+                                
+                                    <label for="estado">Sigla estado</label>
+                                    <select id="state_dados" name="estado" class="form-control">
+                                        <option value="AC">Acre</option>
+                                        <option value="AL">Alagoas</option>
+                                        <option value="AP">Amapá</option>
+                                        <option value="AM">Amazonas</option>
+                                        <option value="BA">Bahia</option>
+                                        <option value="CE">Ceará</option>
+                                        <option value="DF">Distrito Federal</option>
+                                        <option value="ES">Espírito Santo</option>
+                                        <option value="GO">Goiás</option>
+                                        <option value="MA">Maranhão</option>
+                                        <option value="MT">Mato Grosso</option>
+                                        <option value="MS">Mato Grosso do Sul</option>
+                                        <option value="MG">Minas Gerais</option>
+                                        <option value="PA">Pará</option>
+                                        <option value="PB">Paraíba</option>
+                                        <option value="PR">Paraná</option>
+                                        <option value="PE">Pernambuco</option>
+                                        <option value="PI">Piauí</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="RN">Rio Grande do Norte</option>
+                                        <option value="RS">Rio Grande do Sul</option>
+                                        <option value="RO">Rondônia</option>
+                                        <option value="RR">Roraima</option>
+                                        <option value="SC">Santa Catarina</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="SE">Sergipe</option>
+                                        <option value="TO">Tocantins</option>
+                                        <option value="EX">Estrangeiro</option>
+                                    </select>
+                                    <label for="cadastroCelular">Celular</label>
+                                    <input id="telephone_dados" type="text" class="form-control" placeholder="Celular">
+            
+                                </div>
+                                <button type="submit" id="submit_form" class="btn btn-success">Salvar edição</button>
+                              </form>
+                        <a href="meusdados.html" class="btn btn-primary">Voltar</a>
+                        
                     </div>
                     </div>
                 </div>
@@ -171,7 +185,7 @@
         <script src="assets/mail/jqBootstrapValidation.js"></script>
         <script src="assets/mail/contact_me.js"></script>
         <script src="js/scripts.js"></script>
-        <script src="js/meusdados.js"></script>
-        <script src="js/desabilitaconta.js"></script>
+        <script src="js/editardados.js"></script>
+
     </body>
 </html>
