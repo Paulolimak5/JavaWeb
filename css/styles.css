@@ -1670,6 +1670,7 @@ pre code {
   }
 }
 .table {
+  margin-left: 30%;
   width: 100%;
   margin-bottom: 1rem;
   color: #212529;
@@ -2460,6 +2461,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
+  margin-top: 5%;
   color: #fff;
   background-color: #fed136;
   border-color: #fed136;
@@ -2520,6 +2522,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-success {
+  margin-top: 5%;
   color: #fff;
   background-color: #28a745;
   border-color: #28a745;
@@ -2610,6 +2613,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-danger {
+  margin-top: 5%;
   color: #fff;
   background-color: #dc3545;
   border-color: #dc3545;
@@ -9961,6 +9965,7 @@ h3 {
   }
 
   .table {
+
     border-collapse: collapse !important;
   }
   .table td,
@@ -10756,7 +10761,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   margin-bottom: 10%;
 }
 #meus_dados{
-  margin-top: 20%;
+  margin-top: 10%;
 }
 .panel-body img{
   width: 20vh;
@@ -10767,4 +10772,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 #texto_detalhe{
   color: #000;
+}
+.btn-info{
+  margin-top: 5%;
 }
