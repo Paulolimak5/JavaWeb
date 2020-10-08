@@ -67,7 +67,8 @@ $(document).ready(function (){
                 'Access-Control-Allow-Headers': 'Authorization, X-Custom-Header'
            },
             success: function(data) {
-                window.location.href("index.html");
+                localStorage.removeItem('token');
+                window.location.href = "index.html";
             meusdados(data) },
             error: function (request) {
                 console.log(request.responseText)
