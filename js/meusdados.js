@@ -44,3 +44,34 @@ $(document).ready(function (){
         $("#state_dados").text(endereco.state);
         $("#telephone_dados").text(endereco.telephone);
     }
+
+    $( "#desativa" ).click(function() {
+
+        token = localStorage.getItem('token');
+        let email = $("#email_dados").text();
+        console.log(email);
+        let data = {
+            "email":email
+        };
+        $.ajax({
+            type: 'POST',
+            dataType: 'json',
+            contentType: "application/json",
+            url: 'http://localhost:8080/user/desactive',
+            data: JSON.stringify(data),
+            headers: {
+                'Authorization': token,
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Credentials": "true",
+                "Access-Control-Allow-Methods": "POST",
+                'Access-Control-Allow-Headers': 'Authorization, X-Custom-Header'
+           },
+            success: function(data) {
+                window.location.href("index.html");
+            meusdados(data) },
+            error: function (request) {
+                console.log(request.responseText)
+            }
+    });
+
+      });
