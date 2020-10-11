@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "java-web"
+    }
+  },
+  "defaultProject": "java-web",
+  "cli": {
+    "analytics": "337edaed-a86b-4395-81c1-175bbd43d69d"
+  }
 }
