@@ -5,7 +5,11 @@
   "projects": {
     "java-web": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -24,9 +28,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "./node_modules/font-awesome/css/font-awesome.css",
-              "./node_modules/bootstrap/dist/css/bootstrap.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -90,7 +92,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           }
@@ -121,10 +123,6 @@
           }
         }
       }
-    }
-  },
-  "defaultProject": "java-web",
-  "cli": {
-    "analytics": "337edaed-a86b-4395-81c1-175bbd43d69d"
-  }
+    }},
+  "defaultProject": "java-web"
 }
